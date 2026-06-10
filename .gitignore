@@ -1,0 +1,5 @@
+.env
+data/leads.jsonl
+node_modules/
+logs/
+*.log

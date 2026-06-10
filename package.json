@@ -1,0 +1,21 @@
+{
+  "name": "secureanno-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SecureAnno website with built-in lead capture backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "pm2:start": "pm2 startOrReload ecosystem.config.cjs --env production",
+    "pm2:stop": "pm2 stop secureanno",
+    "pm2:logs": "pm2 logs secureanno",
+    "db:setup": "node scripts/setup-db.js",
+    "db:seed": "node scripts/seed-db.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

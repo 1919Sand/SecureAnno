@@ -1,0 +1,16 @@
+[Unit]
+Description=SecureAnno Website
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/secureanno
+EnvironmentFile=/var/www/secureanno/.env
+ExecStart=/usr/bin/node /var/www/secureanno/server.js
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

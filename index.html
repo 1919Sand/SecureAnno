@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAnno - Human-in-the-Loop Data Labeling | Bengaluru</title>
+    <meta name="description"
+        content="SecureAnno delivers precision Human-in-the-Loop data labeling services - FIR annotation, India legal judgments, property address parsing, ops task execution, and more. Trusted by AI teams, legal-tech and fintech platforms across India.">
+    <meta name="keywords"
+        content="data labeling India, human in the loop annotation, FIR labeling, legal judgment annotation, property address labeling, India court order labeling, ops task execution, HITL services, NER annotation, Bengaluru data annotation company">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="SecureAnno.PNG" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="SecureAnno home">
+                <div class="logo-icon">
+                    <img src="SecureAnno.PNG" alt="SecureAnno" width="36" height="36">
+                </div>
+                <span class="logo-text">SecureAnno<span class="logo-accent"></span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-choose" class="nav-link">Why Choose Us</a>
+                <a href="#process" class="nav-link">How It Works</a>
+                <a href="#knowledge" class="nav-link">Learn</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta">Get a Quote</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>India's Trusted HITL Partner | Legal, Fintech, Proptech, AI Teams &amp; Ops Execution
+                        Support</span>
+                </div>
+                <h1 class="hero-title">
+                    Human-in-the-Loop Data Labeling<br>
+                    <span class="gradient-text">for World's AI Ecosystem</span>
+                </h1>
+                <p class="hero-subtitle">
+                    SecureAnno is a Human-in-the-Loop data labeling partner for AI-driven organizations.
+                    We provide NLP Tagging, Legal Data Labeling, and AI-assisted operations workflows, ensuring high
+                    accuracy where automation alone is not enough.
+                    By combining generative AI with expert human validation, we help teams build smarter, faster, and
+                    more reliable AI systems.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        Start Your Project
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn btn-ghost">Explore Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="100K">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Records Labeled</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="99.4">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="80">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="annotation-demo">
+                    <div class="demo-header">
+                        <div class="demo-dots"><span></span><span></span><span></span></div>
+                        <span class="demo-title">FIR Annotation - Live Preview</span>
+                    </div>
+                    <div class="demo-body">
+                        <p class="demo-text">
+                            Complainant <span class="ner-tag ner-name">Suresh Mehta</span> filed
+                            <span class="ner-tag ner-id">FIR No. 0342/2024</span> at
+                            <span class="ner-tag ner-org">Koramangala Police Station</span>, Bengaluru, against
+                            <span class="ner-tag ner-entity">ABC Constructions Pvt. Ltd.</span> for property fraud at
+                            <span class="ner-tag ner-address">Plot No. 14, Whitefield Main Road, Bengaluru -
+                                560066</span>.
+                            The case was heard by Justice Anand Rao on <span class="ner-tag ner-date">12th April
+                                2024</span>.
+                        </p>
+                        <div class="demo-legend">
+                            <span class="legend-item"><span class="legend-dot ner-name-bg"></span> Person</span>
+                            <span class="legend-item"><span class="legend-dot ner-org-bg"></span> Organization</span>
+                            <span class="legend-item"><span class="legend-dot ner-address-bg"></span> Address</span>
+                            <span class="legend-item"><span class="legend-dot ner-date-bg"></span> Date</span>
+                            <span class="legend-item"><span class="legend-dot ner-id-bg"></span> Case ID</span>
+                            <span class="legend-item"><span class="legend-dot ner-entity-bg"></span> Entity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-highlights">
+                    <div class="demo-highlight-item">
+                        <span class="demo-highlight-icon">&#9632;</span>
+                        <span>Vehicle Bounding Box Annotation</span>
+                    </div>
+                    <div class="demo-highlight-item">
+                        <span class="demo-highlight-icon">&#9632;</span>
+                        <span>Product Bounding Box Detection</span>
+                    </div>
+                    <div class="demo-highlight-item">
+                        <span class="demo-highlight-icon">&#9632;</span>
+                        <span>Image Classification &amp; Labelling</span>
+                    </div>
+                    <div class="demo-highlight-item">
+                        <span class="demo-highlight-icon">&#9632;</span>
+                        <span>Chatbot RLHF Labelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="container">
+            <p class="trust-label">Trusted by teams building for</p>
+            <div class="trust-logos">
+                <span class="trust-logo">&#9670; Legal Tech</span>
+                <span class="trust-logo">&#9670; GovTech</span>
+                <span class="trust-logo">&#9670; PropTech</span>
+                <span class="trust-logo">&#9670; AI Research & Data Platforms</span>
+                <span class="trust-logo">&#9670; FinTech</span>
+                <span class="trust-logo">&#9670; E-commerce & Retail AI</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Reliable Ground Truth for <span class="gradient-text">Next-Generation AI</span>
+                </h2>
+                <p class="section-desc">
+                    SecureAnno is a Bengaluru-based Human-in-the-Loop data labeling and operations execution company,
+                    delivering high-quality ground truth for next-generation AI systems.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card featured">
+                    <h3>Who We Are</h3>
+                    <p>We specialize in complex, domain-specific datasets across legal, finance, healthcare, retail, geospatial, and enterprise AI ecosystems.</p>
+                    <p>Our teams blend human intelligence with strict quality frameworks to deliver precise, scalable, and reliable ground truth for mission-critical AI applications.</p>
+                    <h3 class="about-subheading">Our Mission</h3>
+                    <p>To become India's most reliable Human-in-the-Loop annotation partner - enabling legal-tech, gov-tech, and AI teams to build accurate, unbiased models trained on contextually rich, professionally labeled Indian data.</p>
+                    <div class="impact-spotlight" aria-label="Women empowerment and social impact">
+                        <span class="impact-kicker">Social Impact Commitment</span>
+                        <h4>Women Empowerment Across India</h4>
+                        <p>SecureAnno is also being shaped as a women empowerment platform across India, creating flexible digital work opportunities for women who bring native-language fluency, regional context, and domain understanding into AI training and review workflows.</p>
+                        <ul class="impact-highlights">
+                            <li>Inclusive digital livelihoods for women across regions</li>
+                            <li>Native-language expertise that improves AI quality</li>
+                            <li>Local context embedded into training and review workflows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-card about-capabilities-card">
+                    <h3>Our Capabilities</h3>
+                    <ul class="about-capability-list">
+                        <li>
+                            <span class="about-capability-title">Complex Document AI</span>
+                            From OCR extraction to intelligent structuring, we transform handwritten, vernacular, and complex documents into high-quality, machine-ready data.
+                        </li>
+                        <li>
+                            <span class="about-capability-title">Computer Vision</span>
+                            Pixel-perfect annotation for autonomous systems, surveillance, and retail analytics - built for accuracy at scale.
+                        </li>
+                        <li>
+                            <span class="about-capability-title">NLP &amp; LLM RLHF</span>
+                            Human-in-the-loop fine-tuning, response evaluation, and model output verification to ensure factual accuracy, safety, and cultural relevance.
+                        </li>
+                        <li>
+                            <span class="about-capability-title">Geospatial &amp; Address Intelligence</span>
+                            Standardizing messy, real-world location data into structured, reliable intelligence for mapping, logistics, and risk systems.
+                        </li>
+                        <li>
+                            <span class="about-capability-title">AI Ops &amp; Model Validation</span>
+                            End-to-end backend support - from data preparation and OCR validation to model output review, QA workflows, and continuous improvement pipelines.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Cover</span>
+                <h2 class="section-title">From Raw Inputs to <span class="gradient-text">Specialized Human Review</span></h2>
+                <p class="section-desc">
+                    SecureAnno supports the full annotation lifecycle across document-heavy, image-heavy,
+                    and operations-heavy workflows. That means more than labels: we provide domain context,
+                    QA rigor, and dependable execution support.
+                </p>
+            </div>
+            <div class="coverage-grid">
+                <article class="coverage-card">
+                    <span class="coverage-kicker">01</span>
+                    <h3>By Data Type</h3>
+                    <ul class="coverage-list">
+                        <li>Text data for documents, emails, articles, and messages.</li>
+                        <li>Image data for photos, diagrams, screenshots, and X-rays.</li>
+                        <li>Audio and video for speech clips, surveillance, and calls.</li>
+                        <li>Structured records from forms, tables, and databases.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">02</span>
+                    <h3>Text Annotation Services</h3>
+                    <ul class="coverage-list">
+                        <li>Named Entity Recognition for people, places, organizations, dates, and case IDs.</li>
+                        <li>Text classification for topic, intent, spam, and sentiment.</li>
+                        <li>Relation extraction, aspect sentiment, and timestamped transcription.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">03</span>
+                    <h3>Image Annotation Services</h3>
+                    <ul class="coverage-list">
+                        <li>Bounding boxes, semantic segmentation, and instance segmentation.</li>
+                        <li>3D point cloud labeling for LiDAR workflows.</li>
+                        <li>Keypoint detection for pose, anatomy, and machine vision use cases.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">04</span>
+                    <h3>Legal Data Annotation</h3>
+                    <ul class="coverage-list">
+                        <li>FIR labeling — complainants, accused, IPC sections, offense type, station &amp; date.</li>
+                        <li>Court order &amp; judgment annotation — parties, bench, case numbers, cited sections, ruling outcomes.</li>
+                        <li>Property address parsing — survey / khasra numbers, taluk, district, PIN codes, and normalization.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">05</span>
+                    <h3>Ops Task Execution</h3>
+                    <ul class="coverage-list">
+                        <li>Data verification and form processing.</li>
+                        <li>Document triage and OCR extraction verification.</li>
+                        <li>Model output QA and workflow execution.</li>
+                        <li>Entity deduplication and back-office support.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">06</span>
+                    <h3>NLP &amp; Language Annotation</h3>
+                    <ul class="coverage-list">
+                        <li>NER labeling, sentiment analysis, and text classification.</li>
+                        <li>Multilingual name parsing across 12+ Indian languages.</li>
+                        <li>Relation extraction and aspect-level sentiment.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">07</span>
+                    <h3>Specialized Domain Services</h3>
+                    <ul class="coverage-list">
+                        <li>Legal document annotation for court orders, FIRs, contracts, and deeds.</li>
+                        <li>Medical data labeling for records, scans, and imaging workflows.</li>
+                        <li>Autonomous vehicle and e-commerce product data support.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">08</span>
+                    <h3>Quality Control &amp; Ops</h3>
+                    <ul class="coverage-list">
+                        <li>QA review, IAA testing, and human-in-the-loop verification.</li>
+                        <li>RLHF feedback collection and ranking workflows.</li>
+                        <li>Data cleaning for noise, duplicates, and consistency issues.</li>
+                    </ul>
+                </article>
+                <article class="coverage-card">
+                    <span class="coverage-kicker">09</span>
+                    <h3>Industries We Support</h3>
+                    <ul class="coverage-list">
+                        <li>LegalTech, FinTech, and HealthTech teams.</li>
+                        <li>E-commerce and GovTech document operations.</li>
+                        <li>Mobility, robotics, and AI platforms that need dependable human review.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">The SecureAnno <span class="gradient-text">Advantage</span></h2>
+                <p class="section-desc">
+                    Four pillars that set SecureAnno apart from generic data labeling vendors — and make us the
+                    preferred HITL partner for AI teams building on Indian data.
+                </p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-accent="hybrid">
+                    <div class="why-card-header">
+                        <div class="why-icon why-icon-hybrid">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <circle cx="11" cy="16" r="6" stroke="currentColor" stroke-width="2.2" />
+                                <circle cx="21" cy="16" r="6" stroke="currentColor" stroke-width="2.2" />
+                                <path d="M16 11.5v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <span class="why-number">01</span>
+                    </div>
+                    <h3>Human + AI Hybrid Approach</h3>
+                    <p>We combine generative AI pre-labeling with expert human validation. AI handles the repetitive
+                        patterns, humans handle the judgment calls — delivering speed without sacrificing accuracy.</p>
+                    <ul class="why-highlights">
+                        <li>AI-assisted pre-annotation for faster turnaround</li>
+                        <li>Expert human review on every record</li>
+                        <li>Continuous feedback loop between model and annotator</li>
+                    </ul>
+                </div>
+                <div class="why-card" data-accent="domain">
+                    <div class="why-card-header">
+                        <div class="why-icon why-icon-domain">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <path d="M8 6h16v20H8z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" />
+                                <path d="M12 11h8M12 15h8M12 19h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <rect x="19" y="18" width="7" height="7" rx="1.5" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M21 21.5l1.5 1.5 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="why-number">02</span>
+                    </div>
+                    <h3>Domain-Specific Expertise</h3>
+                    <p>Our annotators aren't generic crowdworkers. They're trained legal professionals, paralegal
+                        researchers, and regional language experts who understand Indian FIRs, court orders, and
+                        property documents at a structural level.</p>
+                    <ul class="why-highlights">
+                        <li>Legal, Proptech, and NLP domain specialists</li>
+                        <li>Native fluency in 12+ Indian languages</li>
+                        <li>Context-aware labeling, not surface-level tagging</li>
+                    </ul>
+                </div>
+                <div class="why-card" data-accent="scale">
+                    <div class="why-card-header">
+                        <div class="why-icon why-icon-scale">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <path d="M6 24l7-7 5 5 8-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="26" cy="12" r="3" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span class="why-number">03</span>
+                    </div>
+                    <h3>Scalable &amp; Cost-Effective</h3>
+                    <p>Whether you need 1,000 records or 500,000 — our pipeline scales without delay. Bengaluru-based
+                        operations keep costs competitive while maintaining output quality that exceeds offshore
+                        benchmarks.</p>
+                    <ul class="why-highlights">
+                        <li>3x faster turnaround than industry average</li>
+                        <li>Flexible team sizing per project phase</li>
+                        <li>Transparent per-record pricing, no hidden fees</li>
+                    </ul>
+                </div>
+                <div class="why-card" data-accent="quality">
+                    <div class="why-card-header">
+                        <div class="why-icon why-icon-quality">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <path d="M16 4l3.5 7.5L28 13l-6 5.5L23.5 27 16 23l-7.5 4L10 18.5 4 13l8.5-1.5L16 4z"
+                                    stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" />
+                                <circle cx="16" cy="15" r="3" fill="currentColor" opacity="0.15" />
+                            </svg>
+                        </div>
+                        <span class="why-number">04</span>
+                    </div>
+                    <h3>High Accuracy &amp; Strict QC</h3>
+                    <p>Every batch goes through multi-layer quality control — automated rule checks, inter-annotator
+                        agreement scoring, and senior human review. We guarantee 99%+ accuracy on sensitive legal and
+                        compliance data.</p>
+                    <ul class="why-highlights">
+                        <li>Multi-pass QA with IAA scoring</li>
+                        <li>Automated consistency and format validation</li>
+                        <li>Dedicated QA lead assigned per project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From Raw Documents to <span class="gradient-text">AI-Ready Labels</span></h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Share Your Documents</h3>
+                    <p>Upload your raw data - Fintech, Legaltech, Proptech, or ops workflows - and define your
+                        annotation requirements. We finalize a labeling schema together.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Expert Human Annotation</h3>
+                    <p>Our trained domain annotators label every record using specialized tooling, guided by your schema
+                        and our internal quality guidelines.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Multi-Layer QA Review</h3>
+                    <p>Automated rule checks plus senior human review ensure inter-annotator agreement above 95% and
+                        catch edge cases before delivery.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Deliver &amp; Iterate</h3>
+                    <p>Receive your labeled dataset in JSON, CSV, CoNLL, GSheet, or any format you need. We iterate based on
+                        your model's performance feedback, at no extra cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="knowledge" id="knowledge">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learn</span>
+                <h2 class="section-title">Understanding <span class="gradient-text">Human-in-the-Loop AI</span></h2>
+                <p class="section-desc">
+                    HITL annotation is the invisible backbone of India's most accurate AI systems.
+                    Here's everything you need to know.
+                </p>
+            </div>
+            <div class="knowledge-grid">
+                <div class="knowledge-card knowledge-card-large">
+                    <h3>What is Human-in-the-Loop (HITL) Labeling?</h3>
+                    <p>Human-in-the-Loop (HITL) annotation means a trained human expert labels, validates, or corrects
+                        data at each stage of the AI pipeline - not just at the start. This is critical for sensitive
+                        domains like legal records, government documents, and property data where automated labeling
+                        alone is not reliable enough.</p>
+                    <div class="knowledge-visual">
+                        <div class="knowledge-flow">
+                            <div class="flow-item">Raw Document</div>
+                            <div class="flow-arrow">&rarr;</div>
+                            <div class="flow-item highlight">Expert Annotator</div>
+                            <div class="flow-arrow">&rarr;</div>
+                            <div class="flow-item">QA Review</div>
+                            <div class="flow-arrow">&rarr;</div>
+                            <div class="flow-item">AI Model</div>
+                            <div class="flow-arrow">&rarr;</div>
+                            <div class="flow-item">Accurate Predictions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="knowledge-card">
+                    <h3>Why FIR &amp; Legal Data is Hard to Label</h3>
+                    <p>Indian legal documents use domain-specific language, regional script variations, legacy formats,
+                        and cited sections of law that require genuine legal understanding - not generic text labelers.
+                        That's why SecureAnno employs trained legal professionals for these tasks.</p>
+                </div>
+                <div class="knowledge-card">
+                    <h3>The Challenge of Indian Address Data</h3>
+                    <p>India has 22 official languages, hundreds of transliteration styles, and address formats that
+                        include landmarks, khasra numbers, tehsil names, and PIN codes - often in the same field.
+                        Accurate parsing requires trained human judgment, not just regex rules.</p>
+                </div>
+                <div class="knowledge-card">
+                    <h3>Quality vs. Quantity in Annotation</h3>
+                    <p>Research consistently shows that model accuracy improves more from higher-quality labels than
+                        from larger noisy datasets. Expert HITL annotation with strong QA pipelines outperforms cheap
+                        crowdsourcing - especially for specialized Indian-language documents.</p>
+                </div>
+                <div class="knowledge-card">
+                    <h3>RLHF &amp; Human Feedback Loops</h3>
+                    <p>Reinforcement Learning from Human Feedback (RLHF) - the technique behind top LLMs - requires
+                        humans to rank and rate AI outputs. SecureAnno supports RLHF pipelines with trained annotators
+                        who evaluate output quality for domain expertise AI models.</p>
+                </div>
+                <div class="knowledge-card">
+                    <h3>Labeling Across Indian Languages</h3>
+                    <p>Our annotators handle Hindi, Tamil, Telugu, Marathi, Bengali, Kannada, Malayalam, and 12+ other
+                        Indian languages with native fluency - enabling truly accurate multi-lingual labeling for
+                        Bharat's diverse AI ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact Us</span>
+                    <h2 class="section-title">Let's Build Your <span class="gradient-text">Labeled Dataset</span></h2>
+                    <p class="contact-desc">Ready to get started? Fill out the form and our team will reach out within
+                        24 hours to discuss your project requirements and share a custom quote.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">@</div>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <a href="mailto:support@secureanno.com" class="detail-value">support@secureanno.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">+91</div>
+                            <div>
+                                <span class="detail-label">Phone</span>
+                                <a href="tel:+918867562569" class="detail-value">+91 88675 62569</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon">BLR</div>
+                            <div>
+                                <span class="detail-label">Office</span>
+                                <span class="detail-value">Bengaluru, Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank"
+                            rel="noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/918867562569" class="social-link" aria-label="WhatsApp" target="_blank"
+                            rel="noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 13.58c-.25.7-1.48 1.35-2.03 1.39-.55.04-1.07.27-3.61-.75-3.06-1.22-4.97-4.34-5.12-4.54-.15-.2-1.23-1.64-1.23-3.13 0-1.49.78-2.22 1.06-2.52.28-.3.61-.37.81-.37.2 0 .41 0 .58.01.19.01.44-.07.69.52.25.6.86 2.1.94 2.25.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.54-.15.15-.3.31-.13.61.17.3.78 1.29 1.68 2.09 1.15.96 2.12 1.27 2.42 1.41.3.15.48.13.65-.07.18-.21.75-.88.95-1.18.2-.3.4-.25.68-.15.28.1 1.76.83 2.06.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="hp-field">
+                        <label>Leave blank</label>
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Ananya Rao" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email *</label>
+                            <input type="email" id="email" name="email" placeholder="ananya@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" placeholder="Secure Tech Labs" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" id="jobTitle" name="jobTitle" placeholder="AI Product Lead">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" placeholder="India" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="companySize">Company Size</label>
+                            <select id="companySize" name="companySize">
+                                <option value="" disabled selected>Select size</option>
+                                <option value="1-10">1-10 employees</option>
+                                <option value="11-50">11-50 employees</option>
+                                <option value="51-200">51-200 employees</option>
+                                <option value="201-1000">201-1000 employees</option>
+                                <option value="1000+">1000+ employees</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceInterest">Service Interest *</label>
+                            <select id="serviceInterest" name="serviceInterest" required>
+                                <option value="" disabled selected>What service are you interested in?</option>
+                                <option value="annotation">Data Annotation &amp; AI Training Data</option>
+                                <option value="collection">Data Collection &amp; Dataset Creation</option>
+                                <option value="ops">Ops Task Execution &amp; Backend Support</option>
+                                <option value="genai">Generative AI Service</option>
+                                <option value="model-drift">Model Drift Evaluation - Human In the Loop</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dataVolume">Estimated Data Volume</label>
+                            <select id="dataVolume" name="dataVolume">
+                                <option value="" disabled selected>How much data?</option>
+                                <option value="lt1000">Less than 1,000 records</option>
+                                <option value="1000-10000">1,000 - 10,000 records</option>
+                                <option value="10000-100000">10,000 - 100,000 records</option>
+                                <option value="100000plus">100,000+ records</option>
+                                <option value="other">Other / Not sure yet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDetails">Project Details</label>
+                        <textarea id="projectDetails" name="projectDetails" rows="3"
+                            placeholder="Tell us about your project, data type, timeline, and any annotation requirements..."></textarea>
+                    </div>
+                    <div class="free-sample-banner">
+                        <span class="free-sample-icon">&#127873;</span>
+                        <span>Get your <strong>first 500 samples annotated free</strong> - no commitment
+                            required.</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Submit Inquiry
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <p class="form-disclaimer">By submitting, you agree to our <a href="privacy-policy.html">privacy
+                            policy</a>. We'll never spam or share your details.</p>
+                </form>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                                <rect x="2" y="2" width="10" height="10" rx="2" fill="#6C5CE7" />
+                                <rect x="16" y="2" width="10" height="10" rx="2" fill="#A29BFE" opacity="0.82" />
+                                <rect x="2" y="16" width="10" height="10" rx="2" fill="#00B894" opacity="0.78" />
+                                <rect x="16" y="16" width="10" height="10" rx="2" fill="#6C5CE7" />
+                            </svg>
+                        </div>
+                        <span class="logo-text">SecureAnno<span class="logo-accent">.com</span></span>
+                    </a>
+                    <p class="footer-desc">Precision Human-in-the-Loop annotation for the AI teams building India's
+                        intelligent future.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <a href="#services">Data Annotation &amp; AI Training</a>
+                    <a href="#services">Data Collection &amp; Creation</a>
+                    <a href="#services">Ops Task Execution &amp; Backend Support</a>
+                    <a href="#services">Generative AI Service</a>
+                    <a href="#services">Model Drift Evaluation - HITL</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#contact">Careers</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Resources</h4>
+                    <a href="#knowledge">Learn</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SecureAnno. All rights reserved.</p>
+                <p>Made with &#10084; in Bengaluru, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
