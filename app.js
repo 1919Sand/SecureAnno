@@ -159,6 +159,120 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initNERAnimation();
 
+    // === WHAT WE COVER LIVE DATA WAVE ===
+    function initCoverageWave() {
+        const canvas = document.getElementById('coverageWave');
+        const section = document.getElementById('services');
+        if (!canvas || !section) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        let width = 0;
+        let height = 0;
+        let dpr = 1;
+        let frame = 0;
+        let isVisible = true;
+        let animationId = null;
+
+        function resizeWave() {
+            const rect = section.getBoundingClientRect();
+            dpr = Math.min(window.devicePixelRatio || 1, 2);
+            width = Math.max(1, Math.floor(rect.width));
+            height = Math.max(1, Math.floor(rect.height));
+            canvas.width = Math.floor(width * dpr);
+            canvas.height = Math.floor(height * dpr);
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        function drawWave() {
+            ctx.clearRect(0, 0, width, height);
+
+            const cols = width < 760 ? 54 : 88;
+            const rows = width < 760 ? 18 : 28;
+            const centerX = width * 0.5;
+            const baseY = height * 0.34;
+            const spreadY = Math.min(22, height / 34);
+
+            for (let row = 0; row < rows; row += 1) {
+                const rowRatio = row / Math.max(rows - 1, 1);
+                const depth = 1 - Math.abs(rowRatio - 0.46) * 1.55;
+                const safeDepth = Math.max(0.08, depth);
+
+                for (let col = 0; col < cols; col += 1) {
+                    const colRatio = col / Math.max(cols - 1, 1);
+                    const xBase = colRatio * width;
+                    const edgeFade = Math.sin(colRatio * Math.PI);
+                    const perspective = 0.54 + safeDepth * 0.5;
+                    const waveA = Math.sin(colRatio * 8.2 + frame * 0.015 + row * 0.3);
+                    const waveB = Math.cos(colRatio * 3.4 - frame * 0.01 + row * 0.44);
+                    const tunnel = Math.sin((colRatio - 0.5) * Math.PI * 2 + rowRatio * 4.8 + frame * 0.012);
+                    const x = centerX + (xBase - centerX) * perspective + tunnel * 16 * safeDepth;
+                    const y = baseY + row * spreadY + (waveA * 34 + waveB * 18) * safeDepth;
+                    const radius = Math.max(0.7, safeDepth * 2.2 + edgeFade * 1.1);
+                    const alpha = Math.max(0.04, edgeFade * safeDepth * 0.78);
+
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(0, 230, 165, ${alpha})`;
+                    ctx.fill();
+                }
+            }
+
+            const glow = ctx.createRadialGradient(centerX, baseY + 30, 10, centerX, baseY + 30, width * 0.34);
+            glow.addColorStop(0, 'rgba(0, 230, 165, 0.18)');
+            glow.addColorStop(0.45, 'rgba(108, 92, 231, 0.1)');
+            glow.addColorStop(1, 'rgba(108, 92, 231, 0)');
+            ctx.fillStyle = glow;
+            ctx.fillRect(0, 0, width, height);
+
+            frame += 1;
+            if (isVisible) {
+                animationId = requestAnimationFrame(drawWave);
+            }
+        }
+
+        function startWave() {
+            if (animationId) return;
+            isVisible = true;
+            animationId = requestAnimationFrame(drawWave);
+        }
+
+        function stopWave() {
+            isVisible = false;
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+            }
+        }
+
+        resizeWave();
+        window.addEventListener('resize', resizeWave);
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            drawWave();
+            stopWave();
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startWave();
+                } else {
+                    stopWave();
+                }
+            });
+        }, { threshold: 0.05 });
+
+        observer.observe(section);
+        startWave();
+    }
+
+    initCoverageWave();
+
     const serviceInterestSelect = document.getElementById('serviceInterest');
     const dataVolumeSelect = document.getElementById('dataVolume');
     const dataVolumeLabel = document.querySelector('label[for="dataVolume"]');

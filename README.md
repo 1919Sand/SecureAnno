@@ -89,6 +89,17 @@ Production files are included in:
 - `start-production.sh`
 - `setup-vps.sh`
 - `deploy/nginx.secureanno.conf.example`
+- `DEPLOYMENTS.md`
+
+## Release Snapshots
+
+Keep a dated live record before or after any change:
+
+```bash
+npm run release:snapshot -- --note "What changed"
+```
+
+This creates a git tag and updates [DEPLOYMENTS.md](/c:/Users/sande/Downloads/SecureAnno/DEPLOYMENTS.md).
 
 ## Suggested Production Steps
 

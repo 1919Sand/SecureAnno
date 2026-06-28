@@ -168,44 +168,48 @@
             </div>
             <div class="about-grid">
                 <div class="about-card featured">
+                    <span class="about-kicker">Identity</span>
                     <h3>Who We Are</h3>
-                    <p>We specialize in complex, domain-specific datasets across legal, finance, healthcare, retail, geospatial, and enterprise AI ecosystems.</p>
-                    <p>Our teams blend human intelligence with strict quality frameworks to deliver precise, scalable, and reliable ground truth for mission-critical AI applications.</p>
-                    <h3 class="about-subheading">Our Mission</h3>
-                    <p>To become India's most reliable Human-in-the-Loop annotation partner - enabling legal-tech, gov-tech, and AI teams to build accurate, unbiased models trained on contextually rich, professionally labeled Indian data.</p>
+                    <p class="about-lede">SecureAnno helps AI teams convert complex real-world data into accurate, human-reviewed training datasets.</p>
+                    <p>We bring domain context to legal, finance, healthcare, retail, geospatial, and enterprise AI workflows.</p>
+                    <div class="mission-panel">
+                        <span class="about-kicker">Mission</span>
+                        <p>To become India's trusted Human-in-the-Loop partner for secure, scalable, and context-rich AI data.</p>
+                    </div>
                     <div class="impact-spotlight" aria-label="Women empowerment and social impact">
                         <span class="impact-kicker">Social Impact Commitment</span>
                         <h4>Women Empowerment Across India</h4>
-                        <p>SecureAnno is also being shaped as a women empowerment platform across India, creating flexible digital work opportunities for women who bring native-language fluency, regional context, and domain understanding into AI training and review workflows.</p>
+                        <p>We create flexible digital work for women who bring language fluency, regional context, and careful human judgment into AI review.</p>
                         <ul class="impact-highlights">
-                            <li>Inclusive digital livelihoods for women across regions</li>
-                            <li>Native-language expertise that improves AI quality</li>
-                            <li>Local context embedded into training and review workflows</li>
+                            <li>Flexible digital livelihoods</li>
+                            <li>Native-language review</li>
+                            <li>Local context for AI</li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-card about-capabilities-card">
+                    <span class="about-kicker">Capability Stack</span>
                     <h3>Our Capabilities</h3>
                     <ul class="about-capability-list">
                         <li>
                             <span class="about-capability-title">Complex Document AI</span>
-                            From OCR extraction to intelligent structuring, we transform handwritten, vernacular, and complex documents into high-quality, machine-ready data.
+                            OCR checks, extraction, and structuring for complex forms, records, and documents.
                         </li>
                         <li>
                             <span class="about-capability-title">Computer Vision</span>
-                            Pixel-perfect annotation for autonomous systems, surveillance, and retail analytics - built for accuracy at scale.
+                            Bounding boxes, segmentation, and classification for image and video datasets.
                         </li>
                         <li>
                             <span class="about-capability-title">NLP &amp; LLM RLHF</span>
-                            Human-in-the-loop fine-tuning, response evaluation, and model output verification to ensure factual accuracy, safety, and cultural relevance.
+                            NER, response evaluation, safety checks, and factuality review for language models.
                         </li>
                         <li>
                             <span class="about-capability-title">Geospatial &amp; Address Intelligence</span>
-                            Standardizing messy, real-world location data into structured, reliable intelligence for mapping, logistics, and risk systems.
+                            Cleaning and validating messy location records for mapping, logistics, and risk systems.
                         </li>
                         <li>
                             <span class="about-capability-title">AI Ops &amp; Model Validation</span>
-                            End-to-end backend support - from data preparation and OCR validation to model output review, QA workflows, and continuous improvement pipelines.
+                            QA queues, model-output checks, and delivery-ready datasets for AI operations.
                         </li>
                     </ul>
                 </div>
@@ -214,101 +218,58 @@
     </section>
 
     <section class="services" id="services">
+        <canvas class="coverage-wave" id="coverageWave" aria-hidden="true"></canvas>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header coverage-header">
                 <span class="section-tag">What We Cover</span>
-                <h2 class="section-title">From Raw Inputs to <span class="gradient-text">Specialized Human Review</span></h2>
+                <h2 class="section-title">We label your data.<br><span class="gradient-text">We run your operations.</span></h2>
                 <p class="section-desc">
-                    SecureAnno supports the full annotation lifecycle across document-heavy, image-heavy,
-                    and operations-heavy workflows. That means more than labels: we provide domain context,
-                    QA rigor, and dependable execution support.
+                    Human-in-the-loop annotation and back-office execution for AI teams that need accuracy,
+                    domain context, and dependable delivery.
                 </p>
             </div>
             <div class="coverage-grid">
                 <article class="coverage-card">
-                    <span class="coverage-kicker">01</span>
-                    <h3>By Data Type</h3>
-                    <ul class="coverage-list">
-                        <li>Text data for documents, emails, articles, and messages.</li>
-                        <li>Image data for photos, diagrams, screenshots, and X-rays.</li>
-                        <li>Audio and video for speech clips, surveillance, and calls.</li>
-                        <li>Structured records from forms, tables, and databases.</li>
-                    </ul>
+                    <div class="coverage-card-top">
+                        <span class="coverage-kicker">01</span>
+                        <span class="coverage-badge">DLaaS</span>
+                    </div>
+                    <h3>Data Labelling</h3>
+                    <span class="coverage-tagline">Data Labelling as a Service</span>
+                    <p class="coverage-desc">From raw inputs to clean, model-ready data across text, image, video, document, and language workflows.</p>
+                    <div class="coverage-tags">
+                        <span class="coverage-tag featured">Chatbot / LLM dialogue</span>
+                        <span class="coverage-tag">Text annotation</span>
+                        <span class="coverage-tag">Image labelling</span>
+                        <span class="coverage-tag">Audio / video</span>
+                        <span class="coverage-tag">NER</span>
+                        <span class="coverage-tag">Segmentation</span>
+                        <span class="coverage-tag">3D / LiDAR</span>
+                        <span class="coverage-tag">Legal docs</span>
+                        <span class="coverage-tag">12+ languages</span>
+                    </div>
                 </article>
                 <article class="coverage-card">
-                    <span class="coverage-kicker">02</span>
-                    <h3>Text Annotation Services</h3>
-                    <ul class="coverage-list">
-                        <li>Named Entity Recognition for people, places, organizations, dates, and case IDs.</li>
-                        <li>Text classification for topic, intent, spam, and sentiment.</li>
-                        <li>Relation extraction, aspect sentiment, and timestamped transcription.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">03</span>
-                    <h3>Image Annotation Services</h3>
-                    <ul class="coverage-list">
-                        <li>Bounding boxes, semantic segmentation, and instance segmentation.</li>
-                        <li>3D point cloud labeling for LiDAR workflows.</li>
-                        <li>Keypoint detection for pose, anatomy, and machine vision use cases.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">04</span>
-                    <h3>Legal Data Annotation</h3>
-                    <ul class="coverage-list">
-                        <li>FIR labeling — complainants, accused, IPC sections, offense type, station &amp; date.</li>
-                        <li>Court order &amp; judgment annotation — parties, bench, case numbers, cited sections, ruling outcomes.</li>
-                        <li>Property address parsing — survey / khasra numbers, taluk, district, PIN codes, and normalization.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">05</span>
-                    <h3>Ops Task Execution</h3>
-                    <ul class="coverage-list">
-                        <li>Data verification and form processing.</li>
-                        <li>Document triage and OCR extraction verification.</li>
-                        <li>Model output QA and workflow execution.</li>
-                        <li>Entity deduplication and back-office support.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">06</span>
-                    <h3>NLP &amp; Language Annotation</h3>
-                    <ul class="coverage-list">
-                        <li>NER labeling, sentiment analysis, and text classification.</li>
-                        <li>Multilingual name parsing across 12+ Indian languages.</li>
-                        <li>Relation extraction and aspect-level sentiment.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">07</span>
-                    <h3>Specialized Domain Services</h3>
-                    <ul class="coverage-list">
-                        <li>Legal document annotation for court orders, FIRs, contracts, and deeds.</li>
-                        <li>Medical data labeling for records, scans, and imaging workflows.</li>
-                        <li>Autonomous vehicle and e-commerce product data support.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">08</span>
-                    <h3>Quality Control &amp; Ops</h3>
-                    <ul class="coverage-list">
-                        <li>QA review, IAA testing, and human-in-the-loop verification.</li>
-                        <li>RLHF feedback collection and ranking workflows.</li>
-                        <li>Data cleaning for noise, duplicates, and consistency issues.</li>
-                    </ul>
-                </article>
-                <article class="coverage-card">
-                    <span class="coverage-kicker">09</span>
-                    <h3>Industries We Support</h3>
-                    <ul class="coverage-list">
-                        <li>LegalTech, FinTech, and HealthTech teams.</li>
-                        <li>E-commerce and GovTech document operations.</li>
-                        <li>Mobility, robotics, and AI platforms that need dependable human review.</li>
-                    </ul>
+                    <div class="coverage-card-top">
+                        <span class="coverage-kicker">02</span>
+                        <span class="coverage-badge">OaaS</span>
+                    </div>
+                    <h3>Backend Operations Support</h3>
+                    <span class="coverage-tagline">Operations as a Service</span>
+                    <p class="coverage-desc">Human-reviewed operational support for document processing, QA workflows, model checks, and reliable delivery queues.</p>
+                    <div class="coverage-tags">
+                        <span class="coverage-tag featured">Human-in-loop QA</span>
+                        <span class="coverage-tag">OCR verification</span>
+                        <span class="coverage-tag">Form processing</span>
+                        <span class="coverage-tag">Data validation</span>
+                        <span class="coverage-tag">RLHF</span>
+                        <span class="coverage-tag">Entity dedup</span>
+                        <span class="coverage-tag">Model output review</span>
+                        <span class="coverage-tag">Workflow execution</span>
+                    </div>
                 </article>
             </div>
+            <p class="coverage-footline">Built for LegalTech &middot; HealthTech &middot; FinTech &middot; GovTech &middot; AI Platforms</p>
         </div>
     </section>
 

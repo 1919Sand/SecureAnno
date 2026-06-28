@@ -9,6 +9,7 @@
     "pm2:start": "pm2 startOrReload ecosystem.config.cjs --env production",
     "pm2:stop": "pm2 stop secureanno",
     "pm2:logs": "pm2 logs secureanno",
+    "release:snapshot": "node scripts/release-snapshot.js",
     "db:setup": "node scripts/setup-db.js",
     "db:seed": "node scripts/seed-db.js"
   },

@@ -133,6 +133,24 @@ git status
 
 Production `.env`, `data/`, aur `logs/` Git me tracked nahi hain, isliye normal updates me conflict nahi aana chahiye.
 
+## 9. Save A Dated Snapshot
+
+Jab bhi aaj wali state ko preserve karna ho, local repo me snapshot tag banao:
+
+```bash
+npm run release:snapshot -- --note "June 28 live snapshot"
+git push origin main --tags
+```
+
+Snapshot history [DEPLOYMENTS.md](/c:/Users/sande/Downloads/SecureAnno/DEPLOYMENTS.md) me save hoti hai.
+
+Rollback ke liye:
+
+```bash
+git fetch --tags
+git checkout live-2026-06-28-1015
+```
+
 ## PM2 Commands
 
 ```bash
