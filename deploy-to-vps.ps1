@@ -18,8 +18,7 @@ SSH port (default: 22)
 Remote path where app will be deployed (default: /home/{user}/secureanno)
 
 .EXAMPLE
-.\deploy-to-vps.ps1 -VpsHost "192.168.1.100" -VpsUser "ubuntu"
-.\deploy-to-vps.ps1 -VpsHost "example.com" -VpsUser "deploy"
+.\deploy-to-vps.ps1 -VpsHost "187.127.145.233" -VpsUser "root"
 
 #>
 

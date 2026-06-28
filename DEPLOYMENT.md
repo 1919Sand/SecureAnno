@@ -11,7 +11,7 @@ git init
 git add .
 git commit -m "Initial SecureAnno deployment"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git remote add origin https://github.com/1919Sand/SecureAnno.git
 git push -u origin main
 ```
 
@@ -22,8 +22,8 @@ Important: `.env`, `node_modules/`, `logs/`, aur `data/leads.jsonl` GitHub par u
 Hostinger domain DNS me ye records set karo:
 
 ```text
-A      @      YOUR_VPS_IP
-A      www    YOUR_VPS_IP
+A      @      187.127.145.233
+A      www    187.127.145.233
 ```
 
 DNS propagation me kuch minutes se kuch hours lag sakte hain.
@@ -33,7 +33,7 @@ DNS propagation me kuch minutes se kuch hours lag sakte hain.
 VPS me SSH karo:
 
 ```bash
-ssh root@YOUR_VPS_IP
+ssh root@187.127.145.233
 ```
 
 App folder banao aur GitHub se code clone karo:
@@ -41,7 +41,7 @@ App folder banao aur GitHub se code clone karo:
 ```bash
 sudo mkdir -p /var/www
 sudo chown -R $USER:$USER /var/www
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git /var/www/secureanno
+git clone https://github.com/1919Sand/SecureAnno.git /var/www/secureanno
 cd /var/www/secureanno
 ```
 
@@ -115,7 +115,7 @@ SSL renew automatically hota hai. Check:
 sudo systemctl status certbot.timer
 ```
 
-## 8. Future Updates
+## 8. Future Updates From GitHub
 
 Jab bhi GitHub par new code push karo, VPS par:
 
@@ -124,6 +124,14 @@ cd /var/www/secureanno
 git pull origin main
 bash start-production.sh
 ```
+
+Agar VPS par uncommitted local changes error aaye, pehle check karo:
+
+```bash
+git status
+```
+
+Production `.env`, `data/`, aur `logs/` Git me tracked nahi hain, isliye normal updates me conflict nahi aana chahiye.
 
 ## PM2 Commands
 

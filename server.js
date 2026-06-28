@@ -207,8 +207,9 @@ async function serveStatic(req, res, pathname) {
 
     const safePath = path.normalize(requestedPath).replace(/^(\.\.[/\\])+/, '');
     const filePath = path.join(BASE_DIR, safePath);
+    const relativePath = path.relative(BASE_DIR, filePath);
 
-    if (!filePath.startsWith(BASE_DIR)) {
+    if (!filePath.startsWith(BASE_DIR) || isBlockedStaticPath(relativePath)) {
         return sendJson(res, 403, { ok: false, message: 'Forbidden.' });
     }
 
@@ -230,11 +231,21 @@ async function serveStatic(req, res, pathname) {
 
         fs.createReadStream(filePath).pipe(res);
     } catch (error) {
-        if (error.code === 'ENOENT') {
+        if (error.code === 'ENOENT' || error.code === 'ENOTDIR') {
             return sendJson(res, 404, { ok: false, message: 'Not found.' });
         }
         throw error;
     }
+}
+
+function isBlockedStaticPath(relativePath) {
+    if (!relativePath || relativePath.startsWith('..') || path.isAbsolute(relativePath)) {
+        return true;
+    }
+
+    return relativePath
+        .split(path.sep)
+        .some(part => part.startsWith('.') || part === 'node_modules' || part === 'data' || part === 'logs');
 }
 
 function sendJson(res, statusCode, payload) {

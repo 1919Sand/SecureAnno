@@ -97,6 +97,7 @@ Follow the full VPS guide in `DEPLOYMENT.md`.
 Short version after cloning the GitHub repo on VPS:
 
 ```bash
+git clone https://github.com/1919Sand/SecureAnno.git /var/www/secureanno
 cd /var/www/secureanno
 bash setup-vps.sh /var/www/secureanno
 ```
